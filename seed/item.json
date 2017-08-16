@@ -1,0 +1,15 @@
+{
+  "ID": { "S": "7F2CE9C9-5837-4D86-8D10-E4D1CE6F8A9A" },
+  "Package": {
+    "M": {
+      "ID": { "S": "package1" },
+      "Name": { "S": "Onboarding Package 1" }
+    }
+  },
+  "HireRequest": {
+    "M": {
+      "HiredId": { "S": "candidate1@test.com" },
+      "Type": { "S": "NewHire" }
+    }
+  }
+}

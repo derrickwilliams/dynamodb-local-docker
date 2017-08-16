@@ -1,0 +1,17 @@
+version: "2"
+services:
+  dyno:
+    build: ./dynamolocal
+    volumes:
+      - ./_vol/local:/_var/dynamodb_local
+    ports:
+      - 8008:8000
+  # admin:
+  #   build: ./dynamodb-admin
+  #   ports:
+  #     - 8009:8001
+  #   environment:
+  #     PORT: 8001
+  #     AWS_ACCESS_KEY_ID: "testkey"
+  #     AWS_SECRET_ACCESS_KEY: "testsecret"
+  #     DYNAMO_ENDPOINT: http://dyno:8000
